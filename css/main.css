@@ -1,0 +1,494 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,100,100italic,200,200italic,300italic,300,900,800italic);
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400 !important;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    /*overflow:hidden;*/
+}
+
+/* BACKGROUNDS & CONTAiNERS  */
+.tdd-white-bkgd{
+    background-color: white;
+}
+
+.tdd-centered-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center !important;
+}
+
+.tdd-card-square.mdl-card {
+    width: 100%;
+    height: 440px;
+}
+.tdd-card-square > .mdl-card__title {
+    color: #fff;
+    /*background: url('../img/3.jpg') bottom right 15% no-repeat #46B6AC;*/
+}
+
+/* OVERLAY */
+#overlay-black {
+    background:rgba(50, 50, 50, 0.5);
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    opacity:100;
+    height: 100%;
+    width: 100%;
+}
+
+/* START PADDING STYLES */
+
+/* TOP */
+.tdd-paddingTop-small {
+    padding-top: 30px !important;
+}
+
+.tdd-paddingTop-medium {
+    padding-top: 60px !important;
+}
+
+.tdd-paddingTop-big {
+    padding-top: 90px !important;
+}
+
+/* BOTTOM */
+.tdd-paddingBottom-small {
+    padding-bottom: 30px !important;
+}
+
+.tdd-paddingBottom-medium {
+    padding-bottom: 60px !important;
+}
+
+.tdd-paddingBottom-big {
+    padding-bottom: 90px !important;
+}
+
+/* START PADDING STYLES */
+
+
+
+/* START PADDING STYLES */
+
+/* FONTS */
+
+.tdd-white-font {
+    color: #ffffff;
+}
+
+.tdd-blue-font {
+    color: #3f51b5;
+}
+
+.tdd-no-height {
+    line-height: 1px !important;
+}
+
+
+.tdd-dark-font{
+    font-weight: 700;
+}
+
+.tdd-dark-font-small{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.tdd-dark-font-medium{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.tdd-dark-font-big{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.tdd-light-font{
+    font-weight: 200;
+}
+
+.tdd-light-font-small {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.tdd-light-font-medium {
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.tdd-light-font-big {
+    font-weight: 200;
+    font-size: 23px;
+}
+
+.tdd-fonts-edit .material-icons {
+    font-size: 48px;
+}
+
+
+/* START PADDING STYLES */
+
+
+
+/* START HEADER LAYOUT */
+
+/*.tdd-layout-transparent {
+    background: url('../assets/tdds/transparent.jpg') center / cover;
+}*/
+
+.tdd-layout-transparent__header .mdl-layout__header,
+.tdd-layout-transparent__header .mdl-layout__drawer-button{
+    color: #000000;
+    background: #ffffff !important;
+}
+.tdd-layout-transparent__header .mdl-navigation__link{
+    color: #000000 !important;
+}
+
+/* END HEADER LAYOUT */
+
+
+
+/* START TILTED DIV, TO MAKE THE DIVS TILT TO A SIDE */
+.tdd-tilted-header {
+    z-index: 1;
+    position: relative;
+}
+
+.tdd-tilted-header .tdd-skew:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 700px;
+    background: #ffffff;
+    z-index: -1;
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+    -webkit-backface-visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.tdd-tilted-header .tdd-skew .tdd-tilted-header-inner {
+    max-width: 80%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.tdd-logo {
+    margin: 0;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+.main-container {
+    background: #e7e7e7;
+    position: relative;
+
+}
+
+.main-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 60px;
+    background: #e7e7e7;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+}
+
+section {
+
+}*/
+
+/* END TILTED DIV, TO MAKE THE DIVS TILT TO A SIDE */
+
+
+/* START CSS PARALLAX. EFFECT ON BACKGROUND IMAGE */
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.tdd-parallax-height {
+    height: 100% !important;
+}
+/*.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
+}
+
+.parallax__group {
+    position: relative;
+    height: 700px;
+    transform-style: preserve-3d;
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px);
+}*/
+
+/* END CSS PARALLAX. EFFECT ON BACKGROUND IMAGE */
+
+.tdd-main-raised {
+    margin-top: -10vh;
+    flex-shrink: 0;
+}
+
+.tdd-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.tdd-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.tdd-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.tdd-layout.is-small-screen .tdd-content {
+    padding: 40px 28px;
+}
+
+.tdd-content h3 {
+    /*margin-top: 48px;*/
+}
+
+.tdd-footer {
+    padding-left: 40px;
+}
+
+.tdd-footer .mdl-mini-footer--link-list a {
+    font-size: 13px;
+}
+
+/* about us */
+
+.tdd-showPro-section {
+    position: relative;
+    background: url('../img/2.jpg') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.tdd-showServ-section {
+    position: relative;
+    background: url('../img/4.png') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+
+.tdd-showPro-band {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+}
+
+.tdd-showPro-band-text {
+    max-width: 800px;
+    margin-left: 25%;
+    padding: 24px;
+    text-align: left;
+    color: white;
+}
+
+.tdd-showPro-band-text p {
+    padding-top: 8px;
+}
+
+.tdd-showPro-link {
+    text-decoration: none;
+    color: #8bc34a !important;
+}
+
+.tdd-showPro-link:hover {
+    color: #7cb342 !important;
+}
+
+.tdd-showPro-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.tdd-showPro-alt-link {
+    text-decoration: none;
+    color: #64ffda !important;
+    font-size: 16px;
+}
+
+.tdd-showPro-alt-link:hover {
+    color: #00bfa5 !important;
+}
+
+.tdd-showPro-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.tdd-show-card-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tdd-show-card-section .tdd-show-card-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+}
+
+.tdd-holder {
+    padding: 8px;
+    padding-top: 48px;
+}
+
+.tdd-holder section.section--center {
+    max-width: 860px;
+    margin-bottom: 20px;
+}
+.tdd-holder #features section.section--center {
+    max-width: 620px;
+}
+.tdd-holder section > header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tdd-holder section > .section__play-btn {
+    min-height: 200px;
+}
+.tdd-holder section > header > .material-icons {
+    font-size: 3rem;
+}
+.tdd-holder section > button {
+    position: absolute;
+    z-index: 99;
+    top: 8px;
+    right: 8px;
+}
+.tdd-holder section .section__circle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.tdd-holder section .section__text {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-top: 8px;
+}
+.tdd-holder section .section__text h5 {
+    font-size: inherit;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.tdd-holder section .section__text a {
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.tdd-footer {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.tdd-footer a:hover {
+    color: #8bc34a;
+}
+
+.tdd-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+}
+
+.tdd-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+}
+
+.tdd-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+}
+
+.tdd-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+}
+
+.tdd-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.tdd-link {
+    text-decoration: none;
+    color: #3f51b5 !important;
+}
